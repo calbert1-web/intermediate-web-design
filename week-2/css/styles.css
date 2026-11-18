@@ -1,0 +1,116 @@
+/* TYPOGRAPHY: Oswald is used for headings; Open Sans is used for body text. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #172536;
+    color: #eeeeee;
+    font-family: 'Open Sans', Arial, sans-serif; /* TYPOGRAPHY: body font */
+    line-height: 1.6;
+}
+
+/* % sizing: width of the page; px sizing: maximum width */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* em sizing: header padding; px sizing: bottom border */
+.hero {
+    background-color: #223449;
+    padding: 2em 0;
+    border-bottom: 2px solid #f0a34a;
+}
+
+/* TYPOGRAPHY: heading font and sizes use rem */
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #f0a34a;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0 0 0.3em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5em;
+}
+
+.eyebrow {
+    font-size: 0.85rem;
+    margin-bottom: 0.5em;
+}
+
+.intro {
+    font-size: 1rem;
+}
+
+.rating {
+    color: #f0a34a;
+    font-weight: bold;
+}
+
+.rating span {
+    color: #eeeeee;
+}
+
+/* % sizing: image width; px sizing: image height limit */
+.feature-image {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* em sizing: section padding; px sizing: spacing and corners */
+.content-section {
+    background-color: #223449;
+    padding: 1.5em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* TYPOGRAPHY: paragraph sizing in rem and spacing in em */
+p {
+    font-size: 1rem;
+    margin: 0 0 1em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.accent-section {
+    border-left: 3px solid #f0a34a;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em;
+    color: #bbbbbb;
+}
+
+/* Extra credit: smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .content-section {
+        padding: 1em;
+    }
+}
