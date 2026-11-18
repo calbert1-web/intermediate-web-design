@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alberts Outdoor Store</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Alberts Outdoor Store</h1>
+    <div><a href="#">Login / Register</a> | <a href="https://www.instagram.com/">Instagram</a> | <a href="https://www.facebook.com/">Facebook</a></div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <button id="menuButton" type="button" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+    <div id="navLinks">
+      <a href="#products">All Products</a>
+      <a href="#products">Camping</a>
+      <a href="#products">Hiking</a>
+      <a href="#products">Accessories</a>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Our Products</h2>
+    <!-- Product cards -->
+    <section id="products" class="products">
+      <article class="product">
+        <img src="images/backpack.svg" alt="Trail backpack">
+        <h3>Trail Backpack</h3><p>$39.99</p><p>A backpack for hiking trips.</p><button>Add to Cart</button>
+      </article>
+      <article class="product">
+        <img src="images/lantern.svg" alt="Camping lantern">
+        <h3>Camping Lantern</h3><p>$24.99</p><p>A light for your campsite.</p><button>Add to Cart</button>
+      </article>
+      <article class="product">
+        <img src="images/bottle.svg" alt="Water bottle">
+        <h3>Water Bottle</h3><p>$17.99</p><p>Keep your water cold outdoors.</p><button>Add to Cart</button>
+      </article>
+      <article class="product">
+        <img src="images/boots.svg" alt="Hiking boots">
+        <h3>Hiking Boots</h3><p>$69.99</p><p>Comfortable boots for trails.</p><button>Add to Cart</button>
+      </article>
+      <article class="product">
+        <img src="images/mug.svg" alt="Travel mug">
+        <h3>Travel Mug</h3><p>$19.99</p><p>A mug for drinks on the go.</p><button>Add to Cart</button>
+      </article>
+      <article class="product">
+        <img src="images/tent.svg" alt="Camping tent">
+        <h3>Camping Tent</h3><p>$119.99</p><p>A tent for two people.</p><button>Add to Cart</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Albert Outdoor Store</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+    <p>Email: AlbertOutdoor@fake-email.com | Phone: (304) 867-5309</p>
+  </footer>
+  <script>
+    // Open and close the mobile menu
+    const menuButton = document.getElementById('menuButton');
+    const navLinks = document.getElementById('navLinks');
+    menuButton.addEventListener('click', function () {
+      navLinks.classList.toggle('show');
+      menuButton.setAttribute('aria-expanded', navLinks.classList.contains('show'));
+    });
+    // Simple feedback for cart button
+    document.querySelectorAll('.product button').forEach(function (button) {
+      button.addEventListener('click', function () { alert('Added to cart!'); });
+    });
+  </script>
+</body>
+</html>
