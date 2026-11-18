@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Showcase</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Video Game Showcase</h1>
+        <p>Explore the world of gaming through sound, video, and graphics!</p>
+    </header>
+
+    <main>
+
+        <!-- Introduction Section -->
+        <section>
+            <h2>Welcome to the Game Zone</h2>
+
+            <p>
+                Video games combine creativity, music, storytelling,
+                and exciting visuals. This page showcases some of
+                the multimedia elements used in gaming.
+            </p>
+
+            <img src="images/game.jpg" alt="Video game controller">
+        </section>
+
+        <!-- Canvas Section -->
+        <section>
+            <h2>Custom Gaming Graphic</h2>
+
+            <canvas id="gameCanvas" width="500" height="250">
+                Your browser does not support canvas.
+            </canvas>
+
+            <script>
+                // Get the canvas and drawing context
+                const canvas = document.getElementById("gameCanvas");
+                const ctx = canvas.getContext("2d");
+
+                // Create a background gradient
+                const gradient = ctx.createLinearGradient(0, 0, 500, 250);
+                gradient.addColorStop(0, "blue");
+                gradient.addColorStop(1, "purple");
+
+                // Fill the background
+                ctx.fillStyle = gradient;
+                ctx.fillRect(0, 0, 500, 250);
+
+                // Draw a circle
+                ctx.beginPath();
+                ctx.arc(250, 110, 50, 0, Math.PI * 2);
+                ctx.fillStyle = "yellow";
+                ctx.fill();
+
+                // Draw a rectangle
+                ctx.fillStyle = "white";
+                ctx.fillRect(225, 180, 50, 10);
+
+                // Add text
+                ctx.fillStyle = "white";
+                ctx.font = "bold 25px Arial";
+                ctx.textAlign = "center";
+                ctx.fillText("GAME ON!", 250, 40);
+            </script>
+        </section>
+
+        <!-- Audio Section -->
+        <section>
+            <h2>Game Soundtrack</h2>
+
+            <p>Listen to a soundtrack that could be used in a video game.</p>
+
+            <!-- HTML Audio Player -->
+            <audio controls>
+                <source src="audio/soundtrack.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <!-- Video Section -->
+        <section>
+            <h2>Gameplay Video</h2>
+
+            <p>Watch a short video showing video game gameplay.</p>
+
+            <!-- HTML Video Player -->
+            <video width="100%" controls>
+                <source src="video/gameplay.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Camron Albert | Multimedia Showcase Project</p>
+    </footer>
+
+</body>
+</html>

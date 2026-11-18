@@ -1,0 +1,66 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #222244;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main content */
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* Content sections */
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Images */
+img {
+    width: 250px;
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Canvas */
+canvas {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+/* Audio and video */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+video {
+    max-width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222244;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
