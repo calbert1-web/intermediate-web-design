@@ -1,0 +1,106 @@
+/* Basic page styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #222222;
+    text-align: center;
+}
+
+header {
+    background-color: #263238;
+    color: white;
+    padding: 45px 15px;
+}
+
+header h1 {
+    color: #ffd54f;
+    font-size: 40px;
+}
+
+main {
+    padding: 30px 15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    width: 220px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #bbbbbb;
+}
+
+
+.picture {
+    padding: 25px;
+    font-size: 55px;
+    border-radius: 6px;
+}
+
+.dungeon {
+    background-color: #d7ccc8;
+}
+
+.treasure {
+    background-color: #fff1b8;
+}
+
+.monster {
+    background-color: #d7e5d7;
+}
+
+/* Effect 1: Button hover effect with a smooth transition. */
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ffd54f;
+    color: #222222;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ffb300;
+}
+
+/* Effect 2: Card transform - cards grow slightly when hovered. */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Effect 3: Heading color changes when the mouse moves over it. */
+main h2 {
+    transition: color 0.3s;
+}
+
+main h2:hover {
+    color: #b77900;
+}
+
+footer {
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Make the cards fit smaller screens. */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+}
